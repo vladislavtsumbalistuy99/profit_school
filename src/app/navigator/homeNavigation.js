@@ -10,6 +10,6 @@ export default createStackNavigator(
     }
   },
   {
-    initialRouteName: "Main"
+    initialRouteName: "Main",
   }
 );

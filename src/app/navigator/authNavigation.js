@@ -1,19 +1,27 @@
-import React from "react";
-import { createStackNavigator } from "react-navigation";
+import React from 'react';
+import { createStackNavigator } from 'react-navigation';
 
-import login from "../../screens/auth/login";
-import registration from "../../screens/auth/registration";
+import login from '../../screens/auth/login';
+import registration from '../../screens/auth/registration';
+import preloader from '../../screens/auth/preloader';
+import thanksForReg from '../../screens/auth/thanksForRegistration';
 
 export default createStackNavigator(
   {
-    Login: {
-      screen: login
+    AuthPreloader: {
+      screen: preloader,
     },
-    Registration: {
-      screen: registration
-    }
+    AuthLogin: {
+      screen: login,
+    },
+    AuthRegistration: {
+      screen: registration,
+    },
+    thanksForReg: {
+      screen: thanksForReg,
+    },
   },
   {
-    initialRouteName: "Login"
+    initialRouteName: 'AuthLogin',
   }
 );

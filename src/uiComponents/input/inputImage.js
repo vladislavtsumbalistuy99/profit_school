@@ -42,7 +42,7 @@ export default renderField = ({
       ) : (
         <View style={{ flexDirection: 'row', width: '100%' }}>
           <Image source={imageSrc || defaultValue} style={inputImage} />
-          <Text style={photoInputText}>Carica imagine</Text>
+          <Text style={photoInputText}>Choose image</Text>
         </View>
       )}
     </TouchableOpacity>
