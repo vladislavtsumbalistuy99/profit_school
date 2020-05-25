@@ -9,8 +9,8 @@ const switchNavigator = createSwitchNavigator(
     bottomTabs
   },
   {
-    //initialRouteName: "bottomTabs"
-    initialRouteName: "auth"
+    initialRouteName: "bottomTabs"
+    //initialRouteName: "auth"
   }
 );
 

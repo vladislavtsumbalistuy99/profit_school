@@ -1,6 +1,15 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, View } from "react-native";
+import Header from "../../components/header/header"
 
 export default (community = () => {
-  return <Text>community</Text>;
+  <Header/>
+  return (
+  <View>
+    <Header />
+    <Text>community</Text>
+  </View>
+
+  )
+ 
 });

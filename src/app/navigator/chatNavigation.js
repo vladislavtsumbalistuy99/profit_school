@@ -1,6 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "react-navigation";
-
+import ChatFooterItem from './footerNavigation.js';
 import initScreen from "../../screens/chat";
 
 export default createStackNavigator(
@@ -10,6 +10,17 @@ export default createStackNavigator(
     }
   },
   {
-    initialRouteName: "Main"
+    initialRouteName: "Main",
+    defaultNavigationOptions: {
+      header: null,
+    },
+    navigationOptions: {
+      tabBarLabel: (
+        <ChatFooterItem
+          sourse={require('../../assets/for_Footer/chat.png')}
+          label="chat"
+        />
+      ),
+    },
   }
 );
