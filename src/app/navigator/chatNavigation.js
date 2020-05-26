@@ -17,8 +17,8 @@ export default createStackNavigator(
     navigationOptions: {
       tabBarLabel: (
         <ChatFooterItem
-          sourse={require('../../assets/for_Footer/chat.png')}
-          label="chat"
+          sourse={require('../../assets/for_Footer/profile.png')}
+          label="profile"
         />
       ),
     },

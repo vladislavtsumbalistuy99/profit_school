@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { connect } from 'react-redux';
 import {
   View,
   ScrollView,
@@ -8,6 +9,7 @@ import {
   FlatList,
   Text,
 } from 'react-native';
+import Item from '../../components/community/Item';
 
 import style from './style';
 import Header from '../../components/header/header';
